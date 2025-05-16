@@ -37,7 +37,7 @@ function Youtube() {
         } else {
           url = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&${VIDEO_TYPES[videoType].params}&maxResults=6`;
         }
-
+     
         const response = await fetch(url);
         const data = await response.json();
 
